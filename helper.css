@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* 1 get all font Family,done */
+/* 2 create root and all var,done*/
+/* 2.1 size bg color fontSize,done*/
+/* 3 create helper class */
+/* 3.1 size display  */
+
+
+
+
+
+
+:root {
+    /* font-family */
+    --font-family-nuito: "Nunito Sans", sans-serif;
+    --font-family-noto: "Noto Sans", sans-serif;
+    --font-family-lora: "Lora", serif;
+    --font-family-lato: "Lato", sans-serif;
+    /* size */
+    --font-size-smallest: 12px;
+    --font-size: 16px;
+    --font-size-luxchaffeur: 32px;
+    --font-size-big: 56px;
+    --font-size-serv: 48px;
+    --font-size-car: 24px;
+    --font-size-thebiggest: 72px;
+    /* width */
+    --icon-size-normal: 29px;
+    --icon-size-smail: 18px;
+    /* color */
+    --default-header-bg-line: #1F2430;
+    --bg-light-brown: #F8D7A4;
+    --default-color-white: #FFFFFF;
+    --default-color-black: #232730;
+    --default-color-orange: #A55C30;
+    --default-color-grey: #9F9F9F;
+    --default-color-white-footer: #9F9F9F;
+    /* gap */
+    --normal-gap: 18px;
+    --gap-between: 10px;
+    --gap-header: 48px;
+    --gap-big: 100px;
+}
+
+/*  size */
+
+.icon-normal {
+    width: var(--icon-size-normal);
+    height: var(--icon-size-normal);
+}
+
+.icon-smail {
+    width: var(--icon-size-smail);
+    height: var(--icon-size-smail);
+}
+
+.w1200 {
+    width: 96%;
+    max-width: 1200px;
+}
+
+
+
+/* display */
+
+.w1200 {
+    width: 96%;
+    max-width: 1200px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-reletive {
+    display: flex;
+    position: relative;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-column-cenrer-none {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.flex-column-none-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* text */
+.text-normal-header {
+    color: var(--default-color-black);
+    font-family: var(--font-family-noto);
+    font-size: var(--font-size);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.text-number {
+    color: var(--default-color-white);
+    font-family: var(--font-family-noto);
+    font-size: var(--font-size-thebiggest);
+    font-weight: 600;
+}
+
+
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.text-big {
+    color: var(--default-color-black);
+    font-family: var(--font-family-lora);
+    font-size: var(--font-size-big);
+    font-weight: 700;
+}
+
+.text-small {
+    color: var(--default-color-black);
+    font-family: var(--font-family-nuito);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* margin padding */
+.margin-zero {
+    margin: 0;
+}
+
+.padding-bottom {
+    padding: 110px 0 140px 0;
+}
+
+
+
+
+.margin-small
+/* hover active */
+
+.active {
+    color: var(--default-color-orange);
+}
+
+.header-link:hover {
+    color: var(--default-color-orange);
+}
+
+
+/* logo */
+.logo-all-text {
+    font-size: var(--font-size-luxchaffeur);
+    color: rgb(165, 92, 48);
+    font-family: var(--font-family-lora);
+}
+
+.logo-text {
+    font-weight: 700;
+}
+
+
+/* element control */
+.formaInput {
+    width: 100%;
+    max-width: 404px;
+    font-family: var(--font-family-lora);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: 19px;
+    resize: none;
+    /* color: #9F9F9F;  */
+    color: black;
+    border: none;
+    height: 54px;
+    padding: 0 17px;
+}
+
+.formaInput-special {
+    
+    color: #9F9F9F; 
+}
+
+
+
+
+
+.formaInput::placeholder {
+    color: #9F9F9F;
+}
+
+
+/* ! add hover to header  */
+
+
+
+/* helper finished */
